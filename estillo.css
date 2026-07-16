@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #373535;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#fundo {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    transition: opacity 0.5s ease;
+}
+
+#btSortear {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #00c853;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btSortear:hover {
+    background-color: #009624;
+}
+
+#letras {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+#letras > div {
+    background-color: #2babeb;
+    padding: 15px;
+    border-radius: 12px;
+    flex: 1;
+    max-width: 100px;
+    min-height: 200px;
+}
+
+#letras p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#letras div div {
+    background-color: #333;
+    margin: 5px auto;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 18px;
+    width: 40px;
+}
+
+.ultimo {
+    background-color: #c544d1 !important;
+    font-weight: bold;
+    color: white;
+    animation: piscar 1s infinite;
+}
+
+/* Animação para piscar */
+@keyframes piscar {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
